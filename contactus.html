@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Dananz</title>
+  <link rel="stylesheet" href="./css/contactus.css">
+</head>
+<body class="contactus-body">
+
+  <!-- Header / Navigation -->
+  <header class="contactus-header" id="home">
+    <div class="contactus-header-container">
+      <a href="./home.html" class="contactus-logo-link">
+        <img src="./public/images/logo.svg" alt="Company logo" class="contactus-logo">
+      </a>
+      <nav class="contactus-nav">
+        <ul class="contactus-nav-list">
+          <li class="contactus-nav-item"><a href="./home.html" class="contactus-nav-link">Home</a></li>
+          <li class="contactus-nav-item"><a href="./aboutus.html" class="contactus-nav-link">About Us</a></li>
+          <li class="contactus-nav-item"><a href="./services.html" class="contactus-nav-link">Services</a></li>
+          <li class="contactus-nav-item"><a href="./ourteam.html" class="contactus-nav-link">Our Teams</a></li>
+        </ul>
+        <a href="#contact-form" class="contactus-btn contactus-btn-primary contactus-header-btn">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contactus-main">
+    <!-- Hero / Title Section -->
+    <section class="contactus-hero-section">
+      <div class="contactus-container">
+        <h1 class="contactus-title">Contact Us</h1>
+        <p class="contactus-subtitle">
+          It is a long established fact that a reader will be<br class="contactus-br-desktop">
+          distracted by the readable content of a page when<br class="contactus-br-desktop">
+          looking at its layout.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contactus-form-section" id="contact-form">
+      <div class="contactus-container contactus-form-container">
+        <form class="contactus-form" onsubmit="event.preventDefault(); this.reset();">
+          <div class="contactus-form-row contactus-form-row-2col">
+            <div class="contactus-form-group">
+              <label for="firstName" class="contactus-label">First Name</label>
+              <input type="text" id="firstName" name="firstName" class="contactus-input" placeholder="First Name">
+            </div>
+            <div class="contactus-form-group">
+              <label for="lastName" class="contactus-label">Last Name</label>
+              <input type="text" id="lastName" name="lastName" class="contactus-input" placeholder="Last Name">
+            </div>
+          </div>
+
+          <div class="contactus-form-row">
+            <div class="contactus-form-group">
+              <label for="email" class="contactus-label">Email</label>
+              <input type="email" id="email" name="email" class="contactus-input" placeholder="Email">
+            </div>
+          </div>
+
+          <div class="contactus-form-row">
+            <div class="contactus-form-group">
+              <label for="phoneNumber" class="contactus-label">Phone Number</label>
+              <div class="contactus-phone-input-wrap">
+                <div class="contactus-phone-prefix">
+                  <span class="contactus-phone-country">US</span>
+                  <svg class="contactus-chevron-icon" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L5 5L9 1" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <input type="tel" id="phoneNumber" name="phoneNumber" class="contactus-phone-input" placeholder="First Name">
+              </div>
+            </div>
+          </div>
+
+          <div class="contactus-form-row">
+            <div class="contactus-form-group">
+              <label for="message" class="contactus-label">Message</label>
+              <textarea id="message" name="message" class="contactus-textarea" placeholder="Your Message"></textarea>
+            </div>
+          </div>
+
+          <div class="contactus-form-action">
+            <button type="submit" class="contactus-btn contactus-btn-primary contactus-submit-btn">Send Massage</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Location & Stores Section -->
+    <section class="contactus-location-section" id="locations">
+      <div class="contactus-container">
+        <div class="contactus-section-tag-wrapper">
+          <span class="contactus-section-tag">Loaction</span>
+          <div class="contactus-section-line"></div>
+        </div>
+
+        <div class="contactus-location-grid">
+          <!-- Left Column -->
+          <div class="contactus-store-info">
+            <h2 class="contactus-store-title">Visit Our Stores</h2>
+            <p class="contactus-store-subtitle">Find us at these locations.</p>
+
+            <div class="contactus-contact-block">
+              <h3 class="contactus-contact-type">Email</h3>
+              <a href="mailto:dananz@gmail.com" class="contactus-contact-value">dananz@gmail.com</a>
+            </div>
+
+            <div class="contactus-contact-block">
+              <h3 class="contactus-contact-type">Phone</h3>
+              <a href="tel:+628150021000" class="contactus-contact-value">+62 815 002 1000</a>
+            </div>
+          </div>
+
+          <!-- Right Grid of Locations -->
+          <div class="contactus-cities-grid">
+            <div class="contactus-city-item">
+              <h3 class="contactus-city-name">Jakarta</h3>
+              <p class="contactus-city-desc">
+                Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.
+              </p>
+            </div>
+
+            <div class="contactus-city-item">
+              <h3 class="contactus-city-name">Surakarta</h3>
+              <p class="contactus-city-desc">
+                Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.
+              </p>
+            </div>
+
+            <div class="contactus-city-item">
+              <h3 class="contactus-city-name">Yogyakarta</h3>
+              <p class="contactus-city-desc">
+                Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.
+              </p>
+            </div>
+
+            <div class="contactus-city-item">
+              <h3 class="contactus-city-name">Bandung</h3>
+              <p class="contactus-city-desc">
+                Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="contactus-cta-banner" id="cta">
+      <div class="contactus-container contactus-cta-container">
+        <h2 class="contactus-cta-heading">
+          let's discuss making your interior<br>
+          like a dream place!
+        </h2>
+        <div class="contactus-cta-action">
+          <p class="contactus-cta-text">
+            Contact us below to work together to build your<br class="contactus-br-desktop">
+            amazing interior
+          </p>
+          <a href="#contact-form" class="contactus-btn contactus-btn-light">Contact Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="contactus-footer">
+    <div class="contactus-container contactus-footer-container">
+      <div class="contactus-footer-brand">
+        <a href="./home.html" class="contactus-logo-link">
+          <img src="./public/images/logo.svg" alt="Company logo" class="contactus-logo">
+        </a>
+        <p class="contactus-footer-tagline">
+          one of the best furniture<br>
+          agency.
+        </p>
+      </div>
+
+      <div class="contactus-footer-newsletter">
+        <div class="contactus-newsletter-heading">
+          <span class="contactus-newsletter-dot"></span>
+          <span>Enter your email to get the laterst news</span>
+        </div>
+        <form class="contactus-newsletter-form" onsubmit="event.preventDefault(); this.reset();">
+          <input type="email" class="contactus-newsletter-input" placeholder="Email Address">
+          <button type="submit" class="contactus-newsletter-btn" aria-label="Submit newsletter">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 17L17 7M17 7H8M17 7V16" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </form>
+
+        <div class="contactus-social-wrap">
+          <span class="contactus-social-label">Follow us On</span>
+          <div class="contactus-social-links">
+            <!-- Facebook -->
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="contactus-social-link" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                <circle cx="26" cy="26" r="25" fill="#D9D9D9"/>
+                <path fill="#000" d="M28.9 43V28.1h5l.8-6.2h-5.8v-4c0-1.8.6-3 3-3h3.1V9.4c-.5-.1-2.4-.4-4.6-.4-4.6 0-7.7 2.8-7.7 7.9v5h-5.2v6.2h5.2V43z"/>
+              </svg>
+            </a>
+            <!-- Instagram -->
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="contactus-social-link" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                <circle cx="26" cy="26" r="25" fill="#DADADA"/>
+                <rect x="14.5" y="14.5" width="23" height="23" rx="6.5" fill="none" stroke="#000" stroke-width="2.8"/>
+                <circle cx="26" cy="26" r="5.4" fill="none" stroke="#000" stroke-width="2.8"/>
+                <circle cx="33.2" cy="18.9" r="1.8" fill="#000"/>
+              </svg>
+            </a>
+            <!-- TikTok -->
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="contactus-social-link" aria-label="TikTok">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                <circle cx="26" cy="26" r="25" fill="#D9D9D9"/>
+                <path fill="#000" d="M30 10h5.4c.5 4 2.7 6.5 6.6 7.5v5.8c-2.6-.1-5-1-6.6-2.4v11.5c0 6.1-4.1 10-10 10-5.5 0-9.4-3.9-9.4-9.1 0-5.5 4.3-9.5 10-9.5.7 0 1.4.1 2.1.3v6.1c-.7-.3-1.4-.5-2.2-.5-2.4 0-4.1 1.5-4.1 3.7 0 2 1.4 3.4 3.5 3.4 2.6 0 4.2-1.8 4.2-4.9V10z"/>
+              </svg>
+            </a>
+            <!-- YouTube -->
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="contactus-social-link" aria-label="YouTube">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                <circle cx="26" cy="26" r="25" fill="#DADADA"/>
+                <rect x="11" y="17" width="30" height="18" rx="5" fill="#000"/>
+                <path d="M23 21.3 31 26l-8 4.7z" fill="#fff"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
