@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — Dananz</title>
+  <meta name="description" content="Dananz — interior customization with the best quality and professional workers.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="./css/about.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="home.html" aria-label="Dananz — home">Dananz<small>interior</small></a>
+
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav" aria-label="Main">
+        <ul class="nav__list">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html" class="is-active" aria-current="page">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="ourteam.html">Our Teams</a></li>
+        </ul>
+        <button class="btn btn--primary js-contact" type="button">Contact Us</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ABOUT HERO -->
+    <section class="hero container">
+      <h1 class="hero__title">About</h1>
+      <p class="hero__text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+      <img class="hero__img" src="public/images/about-1.png" width="1200" height="513" alt="Team of designers working together at a meeting table">
+    </section>
+
+    <!-- ACHIEVEMENT -->
+    <section class="achievement container" aria-labelledby="ach-title">
+      <p class="label"><span>ACHIEVEMENT</span></p>
+      <h2 class="h2" id="ach-title">interior customization with Danaanz,<br> best quality with professional workers</h2>
+
+      <div class="achievement__grid">
+        <img class="achievement__img" src="public/images/about-2.png" width="883" height="525" alt="Modern dining room with a sea view">
+
+        <ul class="stats">
+          <li class="stats__item">
+            <strong class="stats__num"><span data-count="350">350</span>+</strong>
+            <span class="stats__label">Project Completed</span>
+          </li>
+          <li class="stats__item">
+            <strong class="stats__num"><span data-count="23">23</span>+</strong>
+            <span class="stats__label">Professional Teams</span>
+          </li>
+          <li class="stats__item">
+            <strong class="stats__num"><span data-count="15">15</span>+</strong>
+            <span class="stats__label">Years Experience</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="why container" aria-labelledby="why-title">
+      <p class="label"><span>SERVICE</span></p>
+      <h2 class="h2 h2--sm" id="why-title">Why Choose Us</h2>
+      <p class="why__lead">Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.</p>
+
+      <div class="cards">
+        <article class="card">
+          <span class="card__icon" aria-hidden="true"></span>
+          <h3 class="card__title">High Quality</h3>
+          <p class="card__text">Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.</p>
+        </article>
+        <article class="card">
+          <span class="card__icon" aria-hidden="true"></span>
+          <h3 class="card__title">Professional Designer</h3>
+          <p class="card__text">Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.</p>
+        </article>
+        <article class="card">
+          <span class="card__icon" aria-hidden="true"></span>
+          <h3 class="card__title">The Best Services</h3>
+          <p class="card__text">Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="contact">
+      <div class="container cta__inner">
+        <h2 class="cta__title">let's discuss making your interior like a dream place!</h2>
+        <div class="cta__side">
+          <p>Contact us below to work together to build your amazing interior</p>
+          <button class="btn btn--light js-contact" type="button">Contact Us</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a class="logo" href="home.html" aria-label="Dananz — home">Dananz<small></small></a>
+        <p class="footer__slogan">One of the best furniture agency.</p>
+      </div>
+
+      <div class="footer__right">
+        <form class="newsletter" id="newsletter" novalidate>
+          <label class="newsletter__label" for="nl-email">Enter your email to get the latest news</label>
+          <div class="newsletter__field">
+            <input id="nl-email" name="email" type="email" placeholder="Email Address" autocomplete="email" required>
+            <button type="submit" aria-label="Subscribe">
+              <svg width="18" height="12" viewBox="0 0 18 12" fill="none" aria-hidden="true"><path d="M0 6h16M11 1l5 5-5 5" stroke="currentColor" stroke-width="1.2"/></svg>
+            </button>
+          </div>
+          <p class="form-msg" id="nl-msg" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="social">
+          <span>Follow us On</span>
+          <ul>
+            <li><a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8V6.5c0-.7.2-1 1.2-1H17V2.2C16.6 2.1 15.5 2 14.3 2 11.7 2 10 3.6 10 6.3V8H7v3.7h3V22h4v-10.3h2.8L17.3 8H14z"/></svg></a></li>
+            <li><a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a></li>
+            <li><a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 2h-3.3v13.2a2.8 2.8 0 1 1-2.8-2.8c.3 0 .6 0 .8.1V9.1a6.1 6.1 0 1 0 5.3 6V8.8a7.6 7.6 0 0 0 4.4 1.4V6.9a4.4 4.4 0 0 1-4.4-4.9z"/></svg></a></li>
+            <li><a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8C22 15.2 22 12 22 12s0-3.2-.4-4.8zM10 15V9l5.2 3-5.2 3z"/></svg></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CONTACT MODAL -->
+  <dialog class="modal" id="contact-modal" aria-labelledby="modal-title">
+    <form class="modal__form" id="contact-form" method="dialog" novalidate>
+      <button class="modal__close" type="button" id="modal-close" aria-label="Close">&times;</button>
+      <h2 class="modal__title" id="modal-title">Contact us</h2>
+
+      <label for="c-name">Name</label>
+      <input id="c-name" name="name" type="text" autocomplete="name" required>
+
+      <label for="c-email">Email</label>
+      <input id="c-email" name="email" type="email" autocomplete="email" required>
+
+      <label for="c-msg">Message</label>
+      <textarea id="c-msg" name="message" rows="4" required></textarea>
+
+      <p class="form-msg" id="c-status" role="status" aria-live="polite"></p>
+      <button class="btn btn--primary" type="submit">Send message</button>
+    </form>
+  </dialog>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
