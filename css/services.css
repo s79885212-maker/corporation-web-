@@ -1,0 +1,420 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header & Navigation */
+.header {
+    padding: 35px 0;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo: 126px x 54px */
+.logo, .footer-logo {
+    width: 126px;
+    height: 54px;
+    object-fit: contain;
+    display: block;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 45px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 400;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    font-weight: 600;
+    color: #000000;
+}
+
+.btn-contact {
+    background-color: #263683;
+    color: #ffffff;
+    padding: 12px 30px;
+    border-radius: 0;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.btn-contact:hover {
+    background-color: #1a223f;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 40px 0 60px 0;
+}
+
+.hero-title {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+.hero-subtitle {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 50px;
+    line-height: 1.8;
+}
+
+.hero-image-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Hero Photo: 1200px x 513px */
+.hero-img {
+    width: 1200px;
+    height: 513px;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+/* Achievement Section */
+.achievement-section {
+    padding: 80px 0;
+}
+
+.achievement-header-line {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 60px;
+}
+
+.achievement-label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.line {
+    width: 320px;
+    height: 1px;
+    background-color: #000000;
+}
+
+/* Achievement Grid with 1 photo and 3 text blocks */
+.achievement-grid {
+    display: grid;
+    grid-template-columns: 746px 334px;
+    justify-content: space-between;
+    row-gap: 80px;
+    align-items: center;
+}
+
+.empty-cell {
+    grid-column: 1;
+}
+
+/* Achievement Photo: 746px x 365px */
+.achievement-image-wrapper {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.achievement-photo {
+    width: 746px;
+    height: 365px;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+/* Text Box: 334px x 170px */
+.service-content {
+    width: 334px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.service-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+.service-desc {
+    font-size: 14px;
+    color: #777777;
+    line-height: 1.7;
+}
+
+/* Product Themes Section */
+.product-themes-section {
+    padding: 60px 0 100px 0;
+}
+
+.product-container {
+    max-width: 1200px;
+}
+
+/* Product Header: 1200px x 166px */
+.product-themes-header {
+    width: 1200px;
+    height: 166px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 60px;
+}
+
+.product-tag {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.product-line {
+    width: 350px;
+    height: 1px;
+    background-color: #000000;
+    margin-bottom: 20px;
+}
+
+.product-main-title {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.product-top-desc {
+    max-width: 380px;
+    font-size: 14px;
+    color: #777777;
+    line-height: 1.8;
+}
+
+.themes-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.theme-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 0;
+    border-bottom: 1px solid #EAEAEA;
+}
+
+.theme-number {
+    font-size: 24px;
+    font-weight: 600;
+    width: 80px;
+}
+
+.theme-info {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    flex-grow: 1;
+}
+
+.theme-title {
+    font-size: 24px;
+    font-weight: 600;
+    width: 180px;
+    text-transform: capitalize;
+}
+
+.theme-text {
+    font-size: 14px;
+    color: #777777;
+    max-width: 400px;
+}
+
+.theme-arrow {
+    font-size: 24px;
+    color: #000000;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.theme-arrow:hover {
+    transform: translateX(5px);
+}
+
+/* CTA Banner Section */
+.cta-banner {
+    background-color: #263683;
+    color: #ffffff;
+    padding: 80px 0;
+}
+
+.cta-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta-title {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.cta-action {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.cta-desc {
+    font-size: 14px;
+    color: #D0D5DD;
+    max-width: 320px;
+}
+
+.btn-white {
+    background-color: #ffffff;
+    color: #232C51;
+    padding: 12px 32px;
+    border-radius: 0;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.btn-white:hover {
+    background-color: #f0f0f0;
+}
+
+/* Footer */
+.footer {
+    padding: 80px 0 60px 0;
+    background-color: #ffffff;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-tagline {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000000;
+    margin-top: 25px;
+    line-height: 1.3;
+}
+
+.footer-newsletter {
+    max-width: 400px;
+    width: 100%;
+}
+
+.newsletter-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    background-color: #000000;
+    border-radius: 50%;
+}
+
+.newsletter-form {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 8px;
+    margin-bottom: 30px;
+}
+
+.newsletter-form input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    width: 100%;
+    color: #333333;
+    background: transparent;
+}
+
+.newsletter-form input::placeholder {
+    color: #AAAAAA;
+}
+
+.newsletter-form button {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #000000;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-title {
+    font-size: 14px;
+    color: #666666;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #333333;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #232C51;
+}
